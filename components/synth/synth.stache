@@ -1,0 +1,73 @@
+<div class="synth-container">
+
+    <div class="controls-container">
+        
+        <div class="controls-display-windows">
+            <div class="controls-preset-container">
+                <div class="controls-preset-window">
+                    <span>NaN I</span>
+                </div>
+                <div class="controls-preset-buttons">
+                    <ul>
+                        <li class="controls-preset-button-up">+<li>
+                        <li class="controls-preset-button-down">-<li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="controls-octave-container">
+                <div class="controls-octave-window">
+                    <span>0</span>
+                </div>
+                <div class="controls-octave-buttons">
+                    <ul>
+                        <li class="controls-octave-button-up">+<li>
+                        <li class="controls-octave-button-down">-<li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="controls-controls">
+            
+        </div>
+
+
+    </div>
+
+    <div class="keys-container">
+
+        <div class="wheels">
+            <div class="wheels-pitch"></div>
+            <div class="wheels-modulation"></div>
+        </div>
+        <ul class="keys">
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+            <li class="key"></li>
+        </ul>
+    </div>
+
+</div>

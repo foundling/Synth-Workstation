@@ -7,14 +7,17 @@ steal(
     function(
 
         can,
-        synthTemplate
+        synthLibraryTemplate
 
     ) {
 
         return can.Component.extend({
 
             tag: 'app-synth-library',
-            template: synthTemplate
+            template: synthLibraryTemplate,
+            viewModel: {
+                modules: []
+            }
 
         }); 
 

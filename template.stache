@@ -1,2 +1,5 @@
 <app-synth-library/>
-<app-workstation/>
+<app-workstation>
+    <app-synth></app-synth>
+</app-workstation>
+

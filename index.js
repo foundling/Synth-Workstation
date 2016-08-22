@@ -4,12 +4,13 @@ steal(
 
     './components/workstation/workstation.js',
     './components/synth_library/synth_library.js',
+    './components/synth/synth.js',
     './template.stache!',
     './style.less!',
 
     function(
         can,
-        workstation, synthLibrary,
+        workstation, synthLibrary, synth,
         appTemplate
 
     ) {
