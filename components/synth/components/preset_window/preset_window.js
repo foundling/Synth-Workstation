@@ -1,7 +1,8 @@
 steal(
 
     'can',
-    'components/synth/models/presets.js',
+
+    './components/synth/models/presets.js',
     './preset_window.stache!',
     './preset_window.less!',
 

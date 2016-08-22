@@ -1,20 +1,17 @@
 steal(
 
     'can',
-    './synth.stache!',
-    './synth.less!',
 
     function(
 
-        can,
-        synthTemplate
+        can
 
     ) {
 
         return can.Component.extend({
 
             tag: 'app-synth',
-            template: synthTemplate,
+            template: '',
             viewModel: null,
             events: {
                 'inserted': function() {
