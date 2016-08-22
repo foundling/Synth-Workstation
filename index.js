@@ -1,14 +1,14 @@
 steal(
 
     'can',
-    './workstation/workstation.js',
+
+    './components/workstation/workstation.js',
     './template.stache!',
     './style.less!',
 
     function(
         can,
-        workstation,
-        appTemplate
+        workstation, appTemplate
 
     ) {
         var tpl = appTemplate();
