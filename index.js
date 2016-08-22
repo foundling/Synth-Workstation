@@ -2,8 +2,8 @@ steal(
 
     'can',
     './workstation/workstation.js',
-    './app_template.stache!',
-    './base.less!',
+    './template.stache!',
+    './style.less!',
 
     function(
         can,
