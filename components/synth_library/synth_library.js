@@ -1,7 +1,8 @@
 steal(
 
     'can',
-    './synth_template.stache!',
+    './synth_library.stache!',
+    './synth_library.less!',
 
     function(
 
@@ -12,7 +13,7 @@ steal(
 
         return can.Component.extend({
 
-            tag: 'app-synth',
+            tag: 'app-synth-library',
             template: synthTemplate
 
         }); 
