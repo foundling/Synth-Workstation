@@ -1,0 +1,6 @@
+parse config settings
+read static values from settings
+generate a 2 octave scale array of frequencies.
+start all two octaves of notes
+apply transforms
+respond to events

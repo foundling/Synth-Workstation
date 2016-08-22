@@ -1,0 +1,28 @@
+input {
+    border: none;
+    background: lightgreen;
+}
+
+.new-dialog {
+    width: auto;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.new-dialog-header,
+.new-dialog-content,
+.new-dialog-footer {
+    width: 500px;
+}
+
+.new-dialog-header {
+
+}
+
+.new-dialog-content {
+
+}
+
+.new-dialog-footer {
+
+}

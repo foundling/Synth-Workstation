@@ -1,0 +1,45 @@
+keys
+polyphony level
+modulation amt
+modulation depth
+patch
+patch +
+patch -
+octave level
+octave + 
+octave -
+square level
+triangle level
+saw level
+attack
+decay
+sustain
+release
+
+events => functions:
+
+Each synth has a .config file in JSON. The synth loads it by default. 
+
+synth/
+    index.js
+    package.json
+    README.md
+    LICENSE.md
+    synths/
+        a/
+            model/
+            view/
+            components/
+        b/
+            model/
+            view/
+            components/
+        c/
+            ...
+    
+    docs/
+
+load config
+start n tones
+accept events
+modify config and sound generation function parameters
