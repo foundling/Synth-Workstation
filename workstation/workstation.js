@@ -1,9 +1,25 @@
-var Workstation = function(config) {
+steal(
+    'can',
+    'can/view/stache/stache.js',
+    './workstation.stache!',
+    './workstation.less!',
+    function(
+        can,
+        stache,
+        workstationTemplate
+    ) {
 
-    this.config = config;
-    this.activeModules = [];
+        return can.Component.extend({
+            tag: 'app-workstation',
+            template: workstationTemplate,
+            viewModel: null,
+            events: {
+                'inserted': function () {
+                    console.log('workstation component inserted');
+                },
+                
+            }
+        });
 
-    console.log('workstation loaded with config: %s', this.config);
-}
-
-export default Workstation; 
+    }
+);

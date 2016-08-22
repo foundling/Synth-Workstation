@@ -7,7 +7,14 @@
     "can": "^2.3.26",
     "steal": "^0.16.35"
   },
-  "devDependencies": {},
+  "system": {
+    "configDependencies": [
+      "live-reload"
+    ]
+  },
+  "devDependencies": {
+    "steal-tools": "^0.16.7"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
