@@ -9,6 +9,7 @@ steal(
     './style.less!',
 
     function(
+
         can,
         workstation, synthLibrary, synth,
         appTemplate
