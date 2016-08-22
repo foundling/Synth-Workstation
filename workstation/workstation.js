@@ -1,12 +1,16 @@
 steal(
+
     'can',
     'can/view/stache/stache.js',
     './workstation.stache!',
     './workstation.less!',
+
     function(
+
         can,
         stache,
         workstationTemplate
+
     ) {
 
         return can.Component.extend({
