@@ -5,8 +5,9 @@ steal(
     './components/workstation/workstation.js',
     './components/synth_library/synth_library.js',
     './components/synth/synth.js',
-    './components/main.stache!',
-    './components/style.less!',
+
+    './main.stache!',
+    './style.less!',
 
     function(
 

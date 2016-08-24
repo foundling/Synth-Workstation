@@ -2,7 +2,7 @@
   "name": "synths",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app/app",
   "dependencies": {
     "can": "^2.3.26",
     "steal": "^0.16.35"
