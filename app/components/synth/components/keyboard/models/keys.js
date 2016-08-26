@@ -1,8 +1,25 @@
 steal(
-    './note_names.js',
+
     'scale-maker/lib/scaleMaker.js',
-    function(noteNames, scaleMaker) {
-        return noteNames;
-    }
-);
-    
+
+    function(scaleMaker) {
+
+    var notes = {};
+    var noteNames = ['A','A#','B','C','C#','D','D#','E','F','F#','G','G#'];
+    var levels = [0,1,2,3,4,5,6,7,8];
+
+    noteNames.map(note => {
+
+        notes[note] = levels.map(level => {
+            return {
+                name: note + level,
+                hertz: scaleMaker.getNote(note + level) 
+                
+            };
+        });
+
+    });
+
+    return notes;
+
+});
