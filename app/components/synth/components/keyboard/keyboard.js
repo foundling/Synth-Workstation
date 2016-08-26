@@ -8,7 +8,7 @@ steal(
     function(
 
         can,
-        keys,
+        allKeys,
         keyboardTemplate,
         keyboardStyles
 
@@ -18,7 +18,20 @@ steal(
             tag: 'synth-keyboard',
             template: keyboardTemplate,
             viewModel: {
-                keys: keys
+                allKeys: allKeys,
+                range: 25,
+
+                define: {
+                    octave: {
+                        value: 0,
+                    }, 
+                    viewableKeys: {
+                        value: this.allKeys.slice(44, 44 + 25),
+                        set: function(start, stop) {
+                            return this.allKeys.slice(start, start + this.range);  
+                        },
+                    }
+                }
             }, 
             events: {
                 'inserted': function() {
