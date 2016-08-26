@@ -8,7 +8,7 @@ steal(
     function(
 
         can,
-        Keys,
+        keys,
         keyboardTemplate,
         keyboardStyles
 
@@ -18,12 +18,12 @@ steal(
             tag: 'synth-keyboard',
             template: keyboardTemplate,
             viewModel: {
-                keys: new Keys('A4', 25) 
+                keys: keys
             }, 
             events: {
                 'inserted': function() {
                     console.log('Synth keyboard inserted.');
-                    console.log(this.viewModel);
+                    console.log(this.viewModel.keys['A'][0]['name']);
                 }
             }
 

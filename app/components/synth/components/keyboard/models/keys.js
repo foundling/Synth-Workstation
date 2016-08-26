@@ -1,8 +1,8 @@
 steal(
-    function() {
-
-        return function(startNote, noteCount) {
-        };
+    './note_names.js',
+    'scale-maker/lib/scaleMaker.js',
+    function(noteNames, scaleMaker) {
+        return noteNames;
     }
 );
     
