@@ -1,0 +1,7 @@
+<ul class="synth-keyboard-container">
+
+    {{#each keys}}
+    <li class="synth-keyboard-key"></li>
+    {{/each}}
+
+</ul>

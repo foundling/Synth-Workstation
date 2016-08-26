@@ -1,0 +1,6 @@
+<div class="synth-container">
+    <div class="synth-controls"></div>
+    <div class="synth-keyboard">
+        <synth-keyboard />     
+    </div>
+</div>
