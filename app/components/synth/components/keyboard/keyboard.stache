@@ -1,7 +1,11 @@
 <ul class="synth-keyboard-container">
-    {{#each}}
+
+    {{#with keyboard}}
+
         {{#each . }}
             <li class="synth-keyboard-key"></li>
         {{/each}}
-    {{/each}}
+
+    {{/with}}
+
 </ul>
