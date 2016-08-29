@@ -1,0 +1,1 @@
+move keyboard out of synth component into it's own component.
