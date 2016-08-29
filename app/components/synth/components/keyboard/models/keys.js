@@ -16,20 +16,15 @@ steal(
             var levels = [0,1,2,3,4,5,6,7,8];
             var keys = [];
 
-            keys.dictionary = {},
-            keys.keyboard = null;
+            keys.dictionary = {}, /* api:  keys['A#'][0].name */
+            keys.keyboard = null; /* [ { name: 'A0' ... }, { name: 'A#0' } ... ] */
 
-            // dict structure
-            // keys['A#'][0].name
-            // keys['A#'][0].hertz
             noteNames.forEach(noteName => {
                 keys.dictionary[noteName] = levels.map(level => {
                     return new Note(noteName, level);
                 });
             });
 
-            // array structure
-            // keys.toKeyboard()[0] => { name: 'A0', hertz: 27.5 }
             keys.toKeyboard = function(startLevel, octaves) {
 
                 var combinedScales;
