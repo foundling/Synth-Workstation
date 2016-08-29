@@ -1,30 +1,34 @@
 steal(
 
     'can',
-    './synth.stache!',
-    './synth.less!',
-    './components/keyboard/keyboard.js',
 
+    /* components */
+    './components/keyboard/keyboard.js',
+    './components/preset_window/preset_window.js',
+
+    /* assets for this module */
+    './synth.stache',
+    './synth.less!',
 
     function(
 
         can,
-        synthTemplate,
-        synthStyle,
-        synthKeyboard
+        synthKeyboard,
+        presetWindow,
+        synthView, synthStyle 
 
     ) {
 
         return can.Component.extend({
 
             tag: 'app-synth',
-            template: synthTemplate,
+            template: synthView,
             viewModel: {
                 patch: null,
             },
             events: {
                 'inserted': function() {
-                    console.log('synth inserted');
+                    console.log(synthView);
                 }
             }
 

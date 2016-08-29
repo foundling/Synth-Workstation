@@ -2,35 +2,49 @@ steal(
 
     'can',
 
-    './components/synth/models/presets.js',
+    './models/presets.js',
+
     './preset_window.stache!',
     './preset_window.less!',
 
     function(
 
         can,
-        presets,
-        presetWindow
+        synthPresets, 
+        presetWindowView 
 
     ) {
         can.Component.extend({
 
             tag: 'preset-window',
-            template: presetWindow,  
+            template: presetWindowView,  
             viewModel: {
-                presets: presets,
-                presetName: presets.attr('0.name')
+                define: {
+                    presetIndex: {
+                        value: null,
+                        get: function() {
+                            return this;
+                        },
+                        set: function(offset) {
+                            return this + offset;
+                        }
+                    },
+                    preset: {
+                        value: null,
+                        get: function() {
+                            return this;
+                        },
+                        set: function(index) {
+                            var index = this.attr('presetIndex');
+                            return synthPresets[index]; 
+                        }
+                    }
+                }
             }, 
             events: {
                 'inserted': function() {
-                    console.log('inserted preset window');
+                    console.log('preset window inserted!');
                 },
-                '.next click': function() {
-                    
-                }, 
-                '.previous click': function() {
-                    
-                } 
             }
 
         });

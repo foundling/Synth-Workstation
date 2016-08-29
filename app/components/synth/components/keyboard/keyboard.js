@@ -1,6 +1,7 @@
 steal(
 
     'can',
+
     './models/keys.js',
     './keyboard.stache!',
     './keyboard.less!',
@@ -8,9 +9,7 @@ steal(
     function(
 
         can,
-        Keys,
-        keyboardTemplate,
-        keyboardStyles
+        Keys, keyboardTemplate, keyboardStyles
 
     ) {
         can.Component.extend({
@@ -22,6 +21,9 @@ steal(
                 keyboard: new Keys().toKeyboard(4, 2)
             }, 
             events: {
+                'inserted': function() { 
+                    console.log('kb inserted'); 
+                }
             }
 
         });

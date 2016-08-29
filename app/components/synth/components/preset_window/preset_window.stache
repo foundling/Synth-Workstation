@@ -1,11 +1,14 @@
 <div class="controls-preset-container">
+
     <div class="controls-preset-window">
         <span>NaN I</span>
     </div>
+
     <div class="controls-preset-buttons">
         <ul>
             <li class="controls-preset-button-up">+<li>
             <li class="controls-preset-button-down">-<li>
         </ul>
     </div>
+
 </div>
