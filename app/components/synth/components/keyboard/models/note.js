@@ -1,17 +1,28 @@
 steal(
 
     'node_modules/scale-maker/lib/scaleMaker.js',
+    './../../../components/oscillator.js
 
-    function(scaleMaker) {
+    function(
+        scaleMaker,
+        Oscillator
+    ) {
 
-    var Note = function(noteName, level) {
-        return {
-            name:   noteName + level,
-            level:  level,
-            hertz:  scaleMaker.getNote(noteName + level)
+        return function Note(noteName, octave) {
+
+            freqInHertz = scaleMaker.getNote(noteName + octave); 
+
+            return {
+                name:   noteName + octave,
+                octave: octave,
+                hertz:  freqInHertz,
+                tone:   new Oscillator({
+
+                    frequency:  freqInHertz,
+                    type:       'square'
+
+                }),
+            };
         };
-    };
-
-    return Note;
 
 });

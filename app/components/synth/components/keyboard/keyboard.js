@@ -12,17 +12,29 @@ steal(
         Keys, keyboardTemplate, keyboardStyles
 
     ) {
-        can.Component.extend({
+
+        var keys = new Keys();
+        var keyboard = keys.toKeyboard(4, 2);
+
+        return can.Component.extend({
 
             tag: 'synth-keyboard',
             template: keyboardTemplate,
             viewModel: {
-                keys: new Keys(),
-                keyboard: new Keys().toKeyboard(4, 2)
+                define: {
+                    keys: {
+                        value: keys
+                    },
+                    keyboard: {
+                        value: keyboard
+                    }
+                }
             }, 
             events: {
                 'inserted': function() { 
-                    console.log('kb inserted'); 
+                    console.log(this.viewModel.attr('keyboard')); 
+                },
+                '.synth-keyboard-key onmousedown': function(el, ev) {
                 }
             }
 

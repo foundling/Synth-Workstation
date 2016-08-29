@@ -2,7 +2,7 @@ ul.synth-keyboard-container {
 
     margin: 0;
     padding: 0;
-    background: gray;
+    background: white;
     position: absolute;
     bottom: 0px; 
     left: 0px; 
@@ -16,6 +16,7 @@ ul.synth-keyboard-container {
 
     li.synth-keyboard-key {
         background: white;
+        border: 1px solid black;
         list-style-type: none;
         max-height: 100%;
 
@@ -24,9 +25,18 @@ ul.synth-keyboard-container {
     }
 
     li.synth-keyboard-key:hover {
-        background: lightgray;
     }
 
-    li.synth-keyboard-key:nth-child(1) {
+    li.synth-keyboard-key:nth-child(2),
+    li.synth-keyboard-key:nth-child(4),
+    li.synth-keyboard-key:nth-child(7),
+    li.synth-keyboard-key:nth-child(9),
+    li.synth-keyboard-key:nth-child(11),
+    li.synth-keyboard-key:nth-child(14),
+    li.synth-keyboard-key:nth-child(16),
+    li.synth-keyboard-key:nth-child(19),
+    li.synth-keyboard-key:nth-child(21),
+    li.synth-keyboard-key:nth-child(23) {
+        background: black;
     }
 }
